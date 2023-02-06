@@ -1,0 +1,46 @@
+.swiper{
+    width: 100%;
+    height: auto;
+
+    &-button-prev{
+        color: $link-hover;
+    }
+
+    &-button-next{
+        color: $link-hover;
+    }
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-product{
+        position: relative;
+
+        width: calc(100% / 4);
+        margin: 1rem;
+        padding: 3rem 0;
+
+        text-align: center;
+        background-color: $white-darken;
+        border-radius: 1rem;
+        color: $black;
+
+        cursor: pointer;
+
+        &__img{
+            border-radius: 50%;
+        }
+
+        &__title{
+            color: $link-hover;
+        }
+
+        &__description{
+            color: $link-hover;
+        }
+    }
+}
+

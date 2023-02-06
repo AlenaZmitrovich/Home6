@@ -1,0 +1,82 @@
+.header {
+    position: fixed;
+    width: 100%;
+  
+    box-shadow: 0 6px 5px $shadow;
+    background-color: $gray;
+  
+    z-index: 10;
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 2rem 0;
+
+        &__logo{
+            float: left;
+
+            &__link{
+                text-decoration: none;
+                color: $white;
+  
+                font-size: $font-12;
+                transition: all .3s;
+
+                &__icon{
+                    padding-left: 1rem;
+                }
+            }
+        }
+
+        &__phone{
+            padding: 0;
+            padding-right: 2rem;
+
+            &__lists{
+                @include lists();
+
+                &__list{
+                    display: inline-block;
+                    padding: 0;
+
+                    list-style: none;
+
+                &__list:not(:last-child){
+                    padding-right: 2rem;
+                }
+
+                    &__image{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+
+        &__phone:not(:last-child){
+            padding-right: 2rem;
+        }
+    }
+
+    &-bottom{
+        margin: 0;
+        padding: 1rem;
+  
+        background-color: $link-hover;
+        color: $white;
+
+        &__description{
+            padding: 0 5rem;
+
+            font-size: $font-12;
+            text-align: center;
+            color: $white;
+
+        }
+    }
+  }
+
+
+

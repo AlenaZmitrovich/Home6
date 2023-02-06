@@ -1,0 +1,28 @@
+.navbar{
+    &-lists{
+        @include lists();
+
+        &__list{
+            display: inline-block;
+            padding: 1.6rem;
+
+            list-style: none;
+
+            &__link{
+                text-decoration: none;
+                color: $white;
+
+                font-size: $font-12;
+                transition: all .3s;
+            }
+
+            &__link:hover{
+                color: $link-hover;
+            }
+        }
+
+        &__list:not(:last-child){
+            padding-right: 2rem;
+        }
+    }
+}

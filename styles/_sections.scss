@@ -1,0 +1,208 @@
+.section1 {
+    margin-top: 12rem;
+
+    &-title{
+        margin: 0;
+        padding: 2rem;
+  
+        text-align: center;
+        text-decoration: line-through;
+        letter-spacing: .5rem;
+        font-size: $font-36;
+        color: $link-hover;
+    }
+
+    &-banner{
+        padding: 3rem;
+        margin-bottom: 5rem;
+
+        text-align: center;
+        color: $white;
+        border-radius: 10px;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.unsplash.com/photo-1478860409698-8707f313ee8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFwfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+        background-position: 50% 50%;
+
+        &__title{
+            padding: 2rem;
+
+            font-size: $font-20;
+            text-align: center;
+            color: $link-hover;
+        }
+
+        &__description{
+            padding: 0 5rem;
+
+            font-size: $font-12;
+            text-align: center;
+            color: $link-hover;
+        }
+    }
+  }
+
+  .section2{
+    width: 75%;
+    padding: 3rem;
+
+    text-align: center;
+    background-color: $white-darken;
+    border-radius: 10px;
+
+    &-title{
+        margin: 0;
+        padding: 2rem;
+  
+        text-align: center;
+        text-decoration: line-through;
+        letter-spacing: .5rem;
+        font-size: $font-36;
+        color: $link-hover;
+    }
+
+    &-lists{
+        @include lists();
+
+        &__list_around{
+            display: inline-block;
+            padding: 0;
+  
+            list-style: none;
+
+            background-color: $white-darken;
+            border-radius: 10px;
+            padding: 2rem;
+
+            &__number{
+                width: 53%;
+                margin: 0 auto;
+                padding: 1rem;
+  
+                color: $white;
+                background-color: $white;
+                border-radius: 50%;
+            }
+        }
+
+        &__list_around:not(:last-child){
+            padding-right: 2rem;
+        }
+    }
+
+    &-description{
+        padding: 0 5rem;
+  
+        font-size: $font-12;
+        text-align: center;
+        color: $link-hover;
+    }
+  }
+
+.section3{
+    &-title{
+        margin: 0;
+        padding: 2rem;
+
+        text-align: center;
+        text-decoration: line-through;
+        letter-spacing: .5rem;
+        font-size: $font-36;
+        color: $link-hover;
+    }
+
+    &-lists{
+        @include lists();
+
+        &__list{
+            display: inline-block;
+            padding: 1.6rem;
+
+            list-style: none;
+
+            &__image{
+                width: 250px;
+  
+                border-radius: 5px;
+                cursor: pointer;
+  
+                transition: all .3s;
+            }
+
+            &__image:hover{
+                box-shadow: 0 6px 5px $shadow;
+                transform: translateY(-5px);
+            }
+        }
+
+        &__list:not(:last-child){
+            padding-right: 2rem;
+        }
+    }
+}
+
+.section4{
+
+    &-title{
+        margin: 0;
+        padding: 2rem;
+
+        text-align: center;
+        text-decoration: line-through;
+        letter-spacing: .5rem;
+        font-size: $font-36;
+        color: $link-hover;
+
+    }
+}
+
+.section5{
+
+    &-title{
+        margin: 0;
+        padding: 2rem;
+
+        text-align: center;
+        text-decoration: line-through;
+        letter-spacing: .5rem;
+        font-size: $font-36;
+        color: $link-hover;
+    }
+}
+
+.section6{
+
+    &-title{
+        margin: 0;
+        padding: 2rem;
+
+        text-align: center;
+        text-decoration: line-through;
+        letter-spacing: .5rem;
+        font-size: $font-36;
+        color: $link-hover;
+    }
+
+    &-map{
+        padding: 10rem;
+        margin-bottom: 5rem;
+
+        text-align: center;
+        color: $white;
+        border-radius: 10px;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.unsplash.com/photo-1478860409698-8707f313ee8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFwfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+        background-position: 50% 50%;
+
+        &__title{
+            padding: 2rem;
+  
+            font-size: $font-20;
+            text-align: center;
+            color: $white;
+        }
+
+        &_wt{
+            color: $white;
+        }
+    }
+}

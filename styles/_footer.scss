@@ -1,0 +1,38 @@
+.footer {
+    background-color: $gray;
+
+    &-call{
+        position: fixed;
+        bottom: 2.2rem;
+        right: 1rem;
+
+        width: 5rem;
+        height: 5rem;
+
+        background-color: $white-darken;
+        border-radius: 50%;
+        box-shadow: 0 6px 5px $shadow;
+
+        z-index: 9;
+
+        &__img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &-rights{
+        padding: 1rem;
+        background-color: $green-darken;
+
+        &__description{
+            color: $white;
+            font-size: $font-10;
+        }
+    }
+  }
